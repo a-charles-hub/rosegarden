@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+    --font: 'Cinzel', serif;
+    --font-body: 'Montserrat', sans-serif;
+    --font-body-poppins: 'Poppins', sans-serif;
+}
+
+.container {
+    height: calc(100vh - 10px - 30vh); /* 100vh - 10px padding header - 30vh bottom */
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageHero {
+    height: calc(100vh - 10px - 50vh);
+}
+
+.headingWrap {
+    line-height: 1;
+}
+
+.heading {
+    font-family: var(--font);
+    font-size: clamp(86px, 5vw, 92px);
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+}
+
+.subHeading {
+    font-family: var(--font-body);
+    font-size: calc(28px, 2vw, 32px);
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+}

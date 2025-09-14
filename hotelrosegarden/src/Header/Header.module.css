@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+    --font: 'Cinzel', serif;
+    --font-body: 'Montserrat', sans-serif;
+    --font-body-poppins: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+.socials {
+    display: none;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: fill;
+}
+
+.icon {
+    font-size: 16px;
+}
+
+/* Navigation Links */
+.nav {
+    margin: 0 50px;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px;
+
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-weight: 450;
+}
+
+.navCenter, .navRight {
+    gap: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navRight li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navLinks li:hover {
+    text-decoration: underline;
+}
