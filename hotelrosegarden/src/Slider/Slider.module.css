@@ -1,0 +1,8 @@
+.swiperContainer {
+    position: relative;
+}
+
+.swiperContainer :global(.swiper-pagination) {
+    position: relative !important;
+    margin-top: 20px;
+}

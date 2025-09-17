@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import styles from "./Slider.module.css";
 
 import { Navigation, Pagination } from "swiper/modules";
 
@@ -17,7 +18,7 @@ function Slider({
 }) {
 
   return (
-    <Swiper
+    <Swiper className={styles.swiperContainer}
       modules={[Navigation, Pagination]}
       slidesPerView={slidesPerView}
       spaceBetween={spaceBetween}
