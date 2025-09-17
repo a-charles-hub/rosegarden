@@ -7,10 +7,7 @@ function Discover() {
             <div>
                 <h3 className={styles.heading}>Discover More</h3>
             </div>
-
-            <div className={styles.cardContainer}>
-                <Cards />
-            </div>
+             <Cards />
         </div>
     );
 }

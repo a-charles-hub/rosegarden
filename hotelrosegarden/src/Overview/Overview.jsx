@@ -60,15 +60,15 @@ function Overview() {
                 </div>
 
                 <div className={styles.imageGallery}>
-                    <ImageCarousel />
-                </div>
-
-                <div className={styles.discoverMore}>
-                    < Discover />
+                    <ImageCarousel className={styles.images} />
                 </div>
 
                 <div className={styles.prefooter}>
                     < Prefooter />
+                </div>
+
+                <div className={styles.discoverMore}>
+                    < Discover />
                 </div>
             </main>
         </>
