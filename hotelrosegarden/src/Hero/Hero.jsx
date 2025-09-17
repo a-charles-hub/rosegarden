@@ -1,6 +1,6 @@
 import styles from './Hero.module.css';
 
-function Hero({ title, subtitle, variant  }) {
+function Hero({ title, subtitle, variant, image  }) {
     return (
         <section className={`${styles.container} ${variant === 'page' ? styles.pageHero : ''}`}>
             <div className={styles.headingWrap}>

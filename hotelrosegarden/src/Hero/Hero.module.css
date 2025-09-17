@@ -12,15 +12,16 @@
 }
 
 .container {
-    height: calc(100vh - 10px - 30vh); /* 100vh - 10px padding header - 30vh bottom */
-    border: 1px solid red;
+    height: calc(100vh - 10px - 10vh); /* 100vh - 10px padding header - 30vh bottom */
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.pageHero {
-    height: calc(100vh - 10px - 50vh);
+    background-image: url("../assets/img/background.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .headingWrap {
@@ -31,7 +32,7 @@
     font-family: var(--font);
     font-size: clamp(86px, 5vw, 92px);
     font-weight: 500;
-    color: #000;
+    color: #fff;
     text-align: center;
 }
 

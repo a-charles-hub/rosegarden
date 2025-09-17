@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+    --font: 'Cinzel', serif;
+    --font-body: 'Montserrat', sans-serif;
+    --font-body-poppins: 'Poppins', sans-serif;
+}
+
+.prefooter {
+    padding: 100px 0;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: calc(100% - 25%);
+    padding: 0 100px;
+    margin: 0 auto;
+}
+
+.image img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.heading, .text, .btn {
+    font-family: var(--font-body);
+    font-weight: 500;
+}
+
+.heading {
+    font-size: 24px;
+    line-height: 32px;
+    color: rgb(0, 0, 0, 0.75);
+}
+
+.text {
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    width: 250px;
+}
+
+.btn {
+    height: 40px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #fff;
+
+    border: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: #000;
+    color: #fff;
+    transition: background 0.4s ease, transform 0.3s ease;
+}
