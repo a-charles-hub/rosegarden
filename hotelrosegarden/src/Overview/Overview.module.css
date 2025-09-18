@@ -1,16 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Root Variables */
-:root {
-    --font: 'Cinzel', serif;
-    --font-body: 'Montserrat', sans-serif;
-    --font-body-poppins: 'Poppins', sans-serif;
-}
-
 /* Content One */
 .content {
     display: flex;

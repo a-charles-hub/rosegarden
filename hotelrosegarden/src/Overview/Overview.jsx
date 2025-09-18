@@ -2,10 +2,12 @@ import Hero from "../Hero/Hero";
 import Discover from "../Discover/Discover.jsx";
 import styles from './Overview.module.css';
 import Prefooter from "../Prefooter/Prefooter.jsx";
+import ImageCarousel from "../components/Image.jsx";
+import Instagram from "../Instagram/Instagram.jsx";
+import Footer from "../Footer/Footer.jsx";
 
 import image from '../assets/img/background.avif';
 
-import ImageCarousel from "../components/Image.jsx";
 
 function Overview() {
     return (
@@ -69,6 +71,14 @@ function Overview() {
 
                 <div className={styles.discoverMore}>
                     < Discover />
+                </div>
+
+                <div>
+                    < Instagram />
+                </div>
+
+                <div>
+                    < Footer />
                 </div>
             </main>
         </>

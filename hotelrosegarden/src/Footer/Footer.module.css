@@ -1,0 +1,135 @@
+/* Footer.module.css */
+footer {
+  border: 0.2px solid rgba(0, 0, 0, 0.2);
+  font-family: var(--font-body-poppins);
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 80px;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10%;
+  box-sizing: border-box;
+  margin: 80px 0;
+}
+
+.footerWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerHeading h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.location,
+.number {
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+.footerLinks li {
+  padding: 7px 0;
+  font-size: 14px;
+}
+
+.connect {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerSocials {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.footerLinks li a {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.reservations .number {
+  color: #151D24;
+}
+
+.footerEnd {
+  width: 100%;
+  padding: 0 10%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 0;
+  font-size: 14px;
+}
+
+/* Animated underline on hover */
+.footerEnd .developer a,
+.footerLinks li a {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footerEnd .developer a::after,
+.footerLinks li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -2px;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: width 0.3s ease;
+}
+
+.footerEnd .developer a:hover,
+.footerLinks li a:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.footerEnd .developer a:hover::after,
+.footerLinks li a:hover::after {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .footerContainer,
+    .footerEnd {
+        padding: 0 4%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footerContainer {
+        margin: 40px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+
+    .footerWrap.about,
+    .footerWrap.connect {
+        display: flex;
+        align-items: end;
+    }
+
+    .footerWrap .address .location {
+        display: inline-block;
+        max-width: 200px; /* adjust width as needed */
+        white-space: pre-line; /* allows line breaks from \n */
+    }
+
+    .footerEnd {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;  
+    }
+}

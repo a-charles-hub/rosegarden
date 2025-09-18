@@ -1,31 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Root Variables */
-:root {
-    --font: 'Cinzel', serif;
-    --font-body: 'Montserrat', sans-serif;
-    --font-body-poppins: 'Poppins', sans-serif;
-}
-
 .heading {
     font-family: var(--font-body);
-    font-size: 32px;
-    font-weight: 500;
+    font-size: clamp(24px, 2vw, 32px);
+    font-weight: 400;
     text-align: center;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 
 @media (max-width: 767px) {
-    .heading {
-        font-size: 24px;
-        font-weight: 400;
+    .container {
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
     }
 
-    .cardContainer {
-        margin: 0 20px;
+    .heading {
+        font-size: clamp(20px, 2vw, 24px);
+        font-weight: 400;
+        margin: 30px 0;
     }
 }

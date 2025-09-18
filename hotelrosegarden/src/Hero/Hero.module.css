@@ -1,16 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Root Variables */
-:root {
-    --font: 'Cinzel', serif;
-    --font-body: 'Montserrat', sans-serif;
-    --font-body-poppins: 'Poppins', sans-serif;
-}
-
 .container {
     height: calc(100vh - 10px - 10vh); /* 100vh - 10px padding header - 30vh bottom */
     display: flex;
