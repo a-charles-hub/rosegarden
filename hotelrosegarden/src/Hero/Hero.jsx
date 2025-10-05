@@ -11,4 +11,4 @@ function Hero({ title, subtitle, variant, image  }) {
     );  
 }
 
-export default Hero
+export default Hero;
