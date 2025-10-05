@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Breakfast",
+    "image": "https://plus.unsplash.com/premium_photo-1676106623583-e68dd66683e3?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Start your day with our delicious breakfast options.",
+    "price": 15.99,
+    "category": "Breakfast"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Lunch",
+    "image": "https://plus.unsplash.com/premium_photo-1669742928112-19364a33b530?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Start your day with our delicious breakfast options.",
+    "price": 15.99,
+    "category": "Lunch"
+  },
+  {
+    "id": 3,
+    "title": "Chicken Dinner",
+    "image": "https://plus.unsplash.com/premium_photo-1663840345377-3813d196d5da?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Start your day with our delicious breakfast options.",
+    "price": 15.99,
+    "category": "Dinner"
+  },
+  {
+    "id": 4,
+    "title": "Vegetarian Platter",
+    "image": "https://plus.unsplash.com/premium_photo-1664647731650-c54d3edce99f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Start your day with our delicious breakfast options.",
+    "price": 15.99,
+    "category": "Platter"
+  }
+]

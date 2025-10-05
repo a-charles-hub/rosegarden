@@ -7,6 +7,10 @@
     background: #f8f8f8;
 }
 
+.pageHero {
+    height: calc(100vh - 50vh); /* 100vh - 10px padding header - 50vh bottom */
+}
+
 .headingWrap {
     line-height: 1;
 }

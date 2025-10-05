@@ -1,0 +1,24 @@
+.menuSelection img {
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menuCard img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid red;
+}
+
+.menuGrid {
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.menuNav {
+    cursor: pointer;
+}
