@@ -1,0 +1,24 @@
+.introSection {
+    width: 900px;
+    display: flex;
+    margin: 0 auto;
+    padding: 50px 0;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.introText h2 {
+    font-size: clamp(24px, 2vw, 42px);
+    text-align: center;
+    color: rgb(0, 0, 0, 0.8);
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.introText p {
+    font-family: var(--font-body);
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    text-align: center;
+}
