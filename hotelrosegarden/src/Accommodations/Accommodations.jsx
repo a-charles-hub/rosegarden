@@ -3,6 +3,7 @@ import Rooms from "../Rooms/Rooms";
 import RoomsPrefooter from "../Rooms/roomsPrefooter";
 import Prefooter from "../Prefooter/Prefooter";
 import Footer from "../Footer/Footer";
+import Discover from "../Discover/Discover";
 
 import styles from "./Accommodations.module.css";
 
@@ -25,6 +26,7 @@ function Accommodations() {
             <Rooms />
             <RoomsPrefooter />
             <Prefooter />
+            <Discover />
             <Footer />
         </>
     );
