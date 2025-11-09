@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import styles from './Menu.module.css';
+import menuIcons from "../components/menuIcons";
+import styles from "./MenuItems.module.css";
 
 function MenuItems() {
     // Set state to all menu items
@@ -35,17 +36,23 @@ const filteredItems =
 
       console.log("Filtered Items:", filteredItems);
   return (
-    <div className={styles.menuItems}>
-      {/* Categories Nav */}
-      <div className={styles.menuNav}>
+      <div className={styles.menuItems}>
+        {/* Categories Nav */}
+        <div className={styles.menuNav}>
         {categories.map(cat => (
           <div
             key={cat}
-            className={`${styles.menuSelection} ${
+            className={`${styles.menu} ${
               selectedCategory === cat ? styles.active : ""
             }`}
             onClick={() => setSelectedCategory(cat)}
           >
+            {/* show icon based on category */}
+            <img
+              src={menuIcons[cat]} 
+              alt={cat}
+              className={styles.menuIcon}
+            />
             <span className={styles.menuText}>{cat}</span>
           </div>
         ))}
@@ -58,20 +65,36 @@ const filteredItems =
 
       {/* Filtered Menu Grid */}
       <div className={styles.menuGrid}>
-        {filteredItems.map(item => (
-          <div className={styles.menuCard} key={item.id}>
-            <img src={item.image} alt={item.title} className={styles.menuImg} />
+        <div className={styles.cards}>
 
-            <div className={styles.menuInfo}>
-              <h4 className={styles.menuTitle}>{item.title}</h4>
-              <p className={styles.menuDesc}>{item.description}</p>
-              <span className={styles.price}>${item.price}</span>
+          {/** Map menu cards */}
+          {filteredItems.map((item) => (
+            <div className={styles.card} key={item.id}>
+              <div className={styles.cardImage}>
+                <img src={item.image} alt="" />
+              </div>
+
+              <div className={styles.cardContent}>
+                <div className={styles.cardTitle}>
+                  <h4 className={styles.title}>{item.title}</h4>
+                </div>
+
+                <div className={styles.cardDescription}>
+                  <p className={styles.description}>{item.description}</p>
+                </div>
+
+                <div className={styles.cardPrice}>
+                  <h4 className={styles.price}>{item.price}</h4>
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
 }
 
 export default MenuItems;
+
+
