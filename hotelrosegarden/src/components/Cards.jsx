@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Slider from "../Slider/Slider";
 import styles from "./Cards.module.css";
-import img1 from "../assets/img/image-gallery-1.avif";
-import img2 from "../assets/img/image-gallery-2.avif";
-import img3 from "../assets/img/image-gallery-3.avif";
-import img4 from "../assets/img/image-gallery-4.avif";
+import img1 from "../assets/img/accommodations.avif";
+import img2 from "../assets/img/dining.avif";
+import img3 from "../assets/img/amenties.avif";
+import img4 from "../assets/img/our-menu.avif";
+import img5 from "../assets/img/wellness-leasure.avif";
+import img6 from "../assets/img/business.avif";
 import { Link } from "react-router-dom"; // ✅ Use Link
 
 function CardCarousel() {
@@ -52,6 +54,20 @@ function CardCarousel() {
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptas unde dolorum iure ad. Cum, illo minus? Quae facilis ipsam aliquid eum iusto voluptatum quasi.",
       link: "/menu" // ✅ Add route
     },
+    
+    { 
+      img: img5, 
+      title: "Wellness & Leasure", 
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptas unde dolorum iure ad. Cum, illo minus? Quae facilis ipsam aliquid eum iusto voluptatum quasi.",
+      link: "/menu" // ✅ Add route
+    },
+
+    { 
+      img: img6, 
+      title: "Business & Events", 
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptas unde dolorum iure ad. Cum, illo minus? Quae facilis ipsam aliquid eum iusto voluptatum quasi.",
+      link: "/menu" // ✅ Add route
+    },
   ];
 
   return (
@@ -65,13 +81,10 @@ function CardCarousel() {
               <img src={card.img} alt={card.title} />
             </div>
 
-            <h3 className={styles.title}>{card.title}</h3>
-            <p className={styles.text}>{card.text}</p>
-
-            {/* ✅ Use Link for navigation */}
-            <Link to={card.link}>
-              <button className={styles.btn}>Explore More</button>
-            </Link>
+            <div className={styles.textWrap}>
+              <h3 className={styles.title}>{card.title}</h3>
+              <p className={styles.text}>{card.text}</p>
+            </div>
           </div>
         </div>
       )}

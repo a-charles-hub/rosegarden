@@ -11,7 +11,7 @@ function Slider({
   items = [], // Store data as an array
   renderItem,
   slidesPerView = 3, // Show 3 slides
-  spaceBetween = 20, // Gap between slides
+  spaceBetween = 5, // Gap between slides
   loop = true, // Always loops
   navigation = true, 
   pagination = true,
