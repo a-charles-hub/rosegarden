@@ -1,0 +1,195 @@
+.bookingContainer {
+    padding-top: 30px;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;        /* full screen height */
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    position: relative;
+    z-index: 10;
+}
+
+.checkoutDetails {
+
+}
+
+.progressBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+    width: 100%;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    font-family: var(--font-body-poppins);
+    font-size: clamp(14px, 2vw, 16px);
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+        
+    position: relative;
+    z-index: 1;
+}
+
+.status button.active {
+    background-color: #000;
+    color: #fff;
+}
+
+.status button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+/* Hotel Rooms */
+.roomContainer {
+    margin: 0 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rooms {
+    width: fit-content;
+    margin-top: 10px;
+    height: 100%;
+}
+
+.room .heading,
+.roomDetails .title, 
+.roomDetails .description,
+.price .amount,
+.amenities span,
+.btn {
+    font-family: var(--font-body);
+}
+
+.roomContainer .heading {
+    font-size: clamp(24px, 4vw, 32px);
+    font-weight: 400;
+}
+
+.cardContainer {
+    display: flex; 
+    flex-direction: column;
+    gap: 30px;
+
+    margin-top: 10px;
+    padding: fixed;
+    height: calc(100vh - 33vh);
+    z-index: 1;
+
+    overflow: scroll;
+    scrollbar-width: none;
+    overscroll-behavior: none;
+    margin-bottom: 20px;
+}
+
+.cardContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.cards {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 890px;
+    height: 100%;
+}
+
+.cards img {
+    width: 427px;
+    height: 320px;
+}
+
+.roomDetails {
+    width: 427px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px;
+}
+
+.roomDetails .description {
+    font-size: clamp(14px, 2vw, 16px);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.roomDetails .amenities {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.roomDetails .amenities span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    font-size: clamp(14px, 2vw, 16px);
+}
+.roomDetails .amenities .wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.roomDetails .title {
+    font-family: var(--font-body-poppins);
+    font-weight: 400;
+    font-size: clamp(18px, 3vw, 24px);
+}
+
+.btnContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    background: none;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.btnAddStay {
+    background: #000;
+    color: #fff;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+
+}
+
+.btnViewRoom {
+
+}

@@ -1,0 +1,142 @@
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+.socials {
+    display: none;
+}
+
+.logo {
+    margin-right: 2em;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: fill;
+}
+
+.icon {
+    font-size: 16px;
+}
+
+.menuBurger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.closeBtn {
+    font-size: 20px;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+}
+
+/* Navigation Links */
+.nav {
+    margin: 0 50px;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-weight: 450;
+}
+
+.navRight {
+    gap: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navRight li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;             /* fill the parent <li> width */
+    padding: 1.5em;     
+    box-sizing: border-box;  
+    transition: background 0.2s ease;
+    font-weight: 500;
+}
+
+.navRight li a:hover {
+    background: #f0f0f0;     /* full-width hover color */
+}
+
+.sideBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 350px;
+    z-index: 999;
+    background: #fff;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.082);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2em;
+    display: none;
+}
+
+.sideBar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.sideBar li {
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Media Queries */
+@media (max-width: 1300px) {
+    .nav {
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .navLinks {
+        font-size: 16px;
+    }
+
+    .navRight {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .navLinks {
+        padding: 1em;
+    }
+    .navRight li {
+        display: none;
+    }
+
+    .menuBurger {
+        display: block;
+    }
+
+    .sideBar {
+        display: none;
+    }
+    
+}

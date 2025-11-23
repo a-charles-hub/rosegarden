@@ -1,0 +1,72 @@
+/* Parent wrapper for positioning */
+.datesWrapper,
+.guestsWrapper {
+  position: relative; /* allows absolute positioning of modal */
+}
+
+.datePicker,
+.guestsContainer {
+  position: absolute;          /* position relative to input */
+  top: calc(100% + 5px);      /* 5px below input */
+  left: 0;
+  z-index: 9999;
+  background: white;           /* opaque */
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 6px;          /* smaller radius, not circle */
+  height: auto;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+/* Guests modal specific sizing */
+.guestsContainer {
+  width: 250px;
+  height: auto;
+}
+
+/* Guest details row */
+.guestDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.guestDetails label {
+  font-family: var(--font-body-poppins);
+  font-size: 16px;
+}
+
+/* Buttons for increment/decrement */
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  background: none;
+  outline: none;
+  border-radius: 6px; /* changed from 50% circle */
+  width: 35px;
+  height: 35px;
+  border: 0.25px solid rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5; /* visual feedback for disabled */
+}
+
+/* Guest number display */
+.guestNumber {
+  font-family: var(--font-body-poppins);
+  font-size: 16px;
+}

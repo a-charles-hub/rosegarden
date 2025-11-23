@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+    --font: 'Cinzel', serif;
+    --font-body: 'Montserrat', sans-serif;
+    --font-body-poppins: 'Poppins', sans-serif;
+}
+
+/* Remove the empty sidebar */
+.rdrDefinedRangesWrapper {
+  display: none !important;
+}
+
+/* Remove left space padding */
+.rdrDateRangeWrapper {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* Adjust font for the calendar */
+.rdrCalendarWrapper,
+.rdrMonthAndYearWrapper,
+.rdrWeekDays,
+.rdrDayNumber span {
+  font-family: var(--font-body-poppins); /* your desired font */
+  font-size: 16px; /* optional */
+}
+

@@ -1,0 +1,177 @@
+/* Content One */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 0;
+    margin: 0 auto;
+}
+
+.columnWrap {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.heading, .text, .btn {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.heading {
+    font-size: clamp(24px, 2vw, 42px);
+    text-align: center;
+    color: rgb(0, 0, 0, 0.8);
+    font-weight: 400;
+}
+
+.text {
+    width: 100%;
+    max-width: 800px;
+    text-align: start;
+    height: 100%;
+    padding: 1em;
+
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 24px;
+}
+
+.secondCol, .thirdCol {
+    width: 100%;
+}
+
+.btn {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #A0522D;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/* Content Two */
+.contentTwo {
+    height: calc(100vh - 20vh);
+    width: 100%;
+    background: #000;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Video */
+.center {
+    color: #fff;
+    font-family: var(--font-body);
+    font-size: 32px;
+}
+
+/* Column Three */
+
+.columnThree .secondCol .text {
+    margin: 0 auto;
+}
+
+/* Image Gallery */
+.imageGallery {
+    background: #D7D2CB;
+    height: 100%;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.discoverMore {
+    padding: 60px 0;
+}
+
+/* Media Query */
+@media (min-width: 1280px) {
+    .heading {
+        width: 800px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .heading {
+        width: 600px;
+    }
+
+    .columnWrap {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .text {
+        font-size: 16px;
+        padding: 1em;
+    }
+
+    .columnThree .text {
+        width: 100%;
+    }
+}
+/* styles for portrait tablets or large phones */
+@media (max-width: 767px) {
+    .contentOne, .contentTwo, .columnThree, .prefooter {
+        padding: 1em;
+    }
+
+    .columnWrap {
+        display: flex;
+        flex-direction: row;
+        gap: 20px !important;
+    }
+
+    .heading {
+        font-size: 24px;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .columnWrap .text, .columnThree .text {
+        font-size: 12px;
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .secondCol, .thirdCol {
+        width: 100%;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
+
+  /* General smartphones */
+@media (max-width: 500px) {
+    .columnWrap {
+        display: flex;
+        flex-direction: column;
+        gap: 10px !important;
+    }
+
+    .content {
+        padding: 40px 0;
+    }
+
+    .heading {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .text {
+        text-align: center;
+    }
+}

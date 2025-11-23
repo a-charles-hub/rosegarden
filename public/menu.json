@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Breakfast",
+    "image": "https://plus.unsplash.com/premium_photo-1676106623583-e68dd66683e3?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Start your day with our delicious breakfast options.",
+    "price": 15.99,
+    "category": "Breakfast"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Lunch",
+    "image": "https://plus.unsplash.com/premium_photo-1669742928112-19364a33b530?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Start your day with our delicious breakfast options.",
+    "price": 15.99,
+    "category": "Lunch"
+  },
+  {
+    "id": 3,
+    "title": "Chicken Dinner",
+    "image": "https://plus.unsplash.com/premium_photo-1663840345377-3813d196d5da?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Start your day with our delicious breakfast options.",
+    "price": 15.99,
+    "category": "Dinner"
+  },
+  {
+    "id": 4,
+    "title": "Vegetarian Platter",
+    "image": "https://plus.unsplash.com/premium_photo-1664647731650-c54d3edce99f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Start your day with our delicious breakfast options.",
+    "price": 15.99,
+    "category": "Platters"
+  },
+  {
+    "id": 5,
+    "title": "Ice Cream",
+    "image": "https://images.unsplash.com/photo-1580915411954-282cb1b0d780?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Start your day with our delicious breakfast options.",
+    "price": 15.99,
+    "category": "Desserts"
+  },
+  {
+    "id": 6,
+    "title": "Beef Steak",
+    "image": "https://images.unsplash.com/photo-1546964124-0cce460f38ef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Start your day with our delicious breakfast options.",
+    "price": 15.99,
+    "category": "Beef"
+  },
+  {
+    "id": 7,
+    "title": "Salad Bowl",
+    "image": "https://images.unsplash.com/photo-1631311695255-8dde6bf96cb5?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Start your day with our delicious breakfast options.",
+    "price": 15.99,
+    "category": "Salad"
+  },
+  {
+    "id": 8,
+    "title": "Veggie Curry",
+    "image": "https://images.unsplash.com/photo-1572161433471-d89cc79fc27c?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Start your day with our delicious breakfast options.",
+    "price": 15.99,
+    "category": "Veggie"
+  },
+  {
+    "id": 9,
+    "title": "Chicken Curry",
+    "image": "https://plus.unsplash.com/premium_photo-1695456065048-52a053ce9dd2?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Start your day with our delicious breakfast options.",
+    "price": 15.99,
+    "category": "Chicken"
+  }
+]
