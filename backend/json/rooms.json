@@ -1,0 +1,40 @@
+{
+    "rooms": [
+        {
+            "id": 1,
+            "title": "Deluxe Suite",
+            "description": "A spacious suite with a king-sized bed, ocean view, and private balcony.",
+            "price_per_night": 250,
+            "amenities": ["Wi-Fi", "Air Conditioning", "Mini Bar", "Room Service"],
+            "image_url": ["https://example.com/images/deluxe_suite.jpg", "https://example.com/images/deluxe_suite_2.jpg"],
+            "availability": true,
+            "room_number": "101",
+            "capacity": 2,
+            "room_type": "Suite"
+        },
+        {
+            "id": 1,
+            "title": "Deluxe Suite",
+            "description": "A spacious suite with a king-sized bed, ocean view, and private balcony.",
+            "price_per_night": 250,
+            "amenities": ["Wi-Fi", "Air Conditioning", "Mini Bar", "Room Service"],
+            "image_url": ["https://example.com/images/deluxe_suite.jpg", "https://example.com/images/deluxe_suite_2.jpg"],
+            "availability": true,
+            "room_number": "101",
+            "capacity": 2,
+            "room_type": "Suite"
+        },
+        {
+            "id": 1,
+            "title": "Deluxe Suite",
+            "description": "A spacious suite with a king-sized bed, ocean view, and private balcony.",
+            "price_per_night": 250,
+            "amenities": ["Wi-Fi", "Air Conditioning", "Mini Bar", "Room Service"],
+            "image_url": ["https://example.com/images/deluxe_suite.jpg", "https://example.com/images/deluxe_suite_2.jpg"],
+            "availability": true,
+            "room_number": "101",
+            "capacity": 2,
+            "room_type": "Suite"
+        }
+    ]
+}

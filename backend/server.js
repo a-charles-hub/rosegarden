@@ -1,17 +1,11 @@
-const express = require('express');
-const cors = require('cors');
+const express = require('express'); // Import express
+const cors = require('cors'); // Import cors for handling cross-origin requests
+const app = express(); // Create an express application
+const PORT = 3000; // Define the port number
+app.use(cors()); // Enable CORS for all routes
 
-const app = express();
-const PORT = 3000;
+const rooms = require('./routes/room'); // Import rooms routes
 
-app.use(cors());
-
-app.get("/api/rooms", (req, res) => {
-  res.json([
-    { id: 1, name: "Deluxe Room", price: 120 },
-    { id: 2, name: "Suite", price: 200 },
-    { id: 2, name: "Suite 3", price: 300 },
-  ]);
-});
-
+// Routes
+app.use('/rooms', rooms); // Use rooms routes for /rooms endpoint
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
